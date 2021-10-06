@@ -5,15 +5,11 @@
 
 <div class="row">
     <div class="col">
-        <app-personajes [personajes]=personajes> <!-- A la app personajes le asignamos los personajes de la main-page -->
-        </app-personajes>
+        <app-personajes></app-personajes>
     </div>
 
     <div class="col">
-        <app-agregar
-            [nuevo]="nuevo"
-            (onNuevoPersonaje)="agregarNuevoPersonaje( $event )"
-        ></app-agregar>
+        <app-agregar [nuevo]="nuevo"></app-agregar>
     </div>
 
 </div>
